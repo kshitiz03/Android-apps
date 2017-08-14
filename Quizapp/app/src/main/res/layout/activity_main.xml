@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img1"
+    tools:context="com.example.android.quizapp.MainActivity">
+<RelativeLayout
+    android:id="@+id/Rel_Layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/getr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ready For The Quiz!!"
+        android:layout_centerInParent="true"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:textColor="@color/colorPrimaryDark"/>
+    <TextView
+        android:id="@+id/ques"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:textSize="30dp"
+        android:text=""/>
+    <Button
+        android:id="@+id/ans1"
+        android:background="@android:color/transparent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ques"
+        android:layout_centerHorizontal="true"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:onClick="ans11"
+        android:layout_marginTop="50dp"
+        android:text=""/>
+    <Button
+        android:id="@+id/ans2"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ans1"
+        android:onClick="ans22"
+        android:background="@android:color/transparent"
+
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text=""/>
+    <Button
+        android:id="@+id/ans3"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ans2"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/transparent"
+
+        android:onClick="ans33"
+
+        android:layout_marginTop="50dp"
+        android:text=""/>
+    <Button
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:id="@+id/ans4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ans3"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/transparent"
+
+        android:onClick="ans44"
+
+        android:layout_marginTop="50dp"
+        android:text=""/>
+</RelativeLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/background"
+        android:scaleType="fitXY"
+        />
+    <TextView
+        android:id="@+id/get"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_centerInParent="true"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:textColor="@color/colorPrimaryDark"/>
+</RelativeLayout>

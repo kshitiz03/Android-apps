@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="2dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+
+    android:paddingTop="10dp"
+    android:background="@drawable/bc"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="TEAM A"
+                android:textSize="16sp"
+                />
+            <TextView
+                android:id="@+id/disp_sc_a"
+                android:textStyle="bold"
+                android:layout_gravity="center_horizontal"
+                android:text="0"
+                android:textColor="@android:color/black"
+                android:fontFamily="cursive"
+                android:textSize="26sp"
+                android:layout_marginTop="16dp"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <Button
+                android:id="@+id/SCA3_text_view"
+                android:layout_width="98dp"
+                android:layout_height="48dp"
+                android:layout_gravity="center_horizontal"
+                android:text="+3          POINT"
+                android:layout_marginTop="16dp"
+
+                android:onClick="updateAdda3"
+                android:textColor="@android:color/background_dark"
+                android:background="@android:color/holo_orange_light"
+                android:textSize="16sp" />
+            <Button
+                android:id="@+id/SCA2_text_view"
+                android:layout_width="98dp"
+                android:layout_height="48dp"
+                android:text="+2          POINT"
+                android:layout_marginTop="16dp"
+
+                android:onClick="updateAdda2"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@android:color/background_dark"
+                android:background="@android:color/holo_orange_light"
+                android:textSize="16sp" />
+            <Button
+                android:id="@+id/SCAF_text_view"
+                android:layout_width="98dp"
+                android:layout_height="48dp"
+                android:layout_gravity="center_horizontal"
+                android:text="Free Throw"
+                android:layout_marginTop="16dp"
+
+                android:onClick="updateAddaf"
+                android:textColor="@android:color/background_dark"
+                android:background="@android:color/holo_orange_light"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="5dp"
+            android:layout_height="270dp">
+            <View
+                android:layout_width="3dp"
+                android:layout_height="fill_parent"
+                android:background="#ffffff" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+            android:layout_weight="1">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="TEAM B"
+                android:textSize="14sp"
+                />
+            <TextView
+                android:id="@+id/disp_sc_b"
+                android:textStyle="bold"
+                android:layout_gravity="center_horizontal"
+                android:text="0"
+                android:textColor="@android:color/black"
+                android:fontFamily="cursive"
+                android:textSize="26sp"
+                android:layout_marginTop="16dp"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <Button
+                android:id="@+id/SCB3_text_view"
+                android:layout_width="98dp"
+                android:layout_height="48dp"
+                android:layout_gravity="center_horizontal"
+                android:text="+3          POINT"
+                android:layout_marginTop="16dp"
+
+                android:onClick="updateAddb3"
+                android:textColor="@android:color/background_dark"
+                android:background="@android:color/holo_orange_light"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/SCB2_text_view"
+                android:layout_width="98dp"
+                android:layout_height="48dp"
+                android:text="+2          POINT"
+                android:layout_marginTop="16dp"
+
+                android:onClick="updateAddb2"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@android:color/background_dark"
+                android:background="@android:color/holo_orange_light"
+                android:textSize="16sp" />
+            <Button
+                android:id="@+id/SCBF_text_view"
+                android:layout_width="98dp"
+                android:layout_height="48dp"
+                android:layout_gravity="center_horizontal"
+                android:text="Free Throw"
+                android:layout_marginTop="16dp"
+
+                android:onClick="updateAddbf"
+                android:textColor="@android:color/background_dark"
+                android:background="@android:color/holo_orange_light"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+    <Button
+        android:layout_width="98dp"
+        android:layout_height="48dp"
+        android:text="check out the winner"
+        android:layout_marginTop="16dp"
+
+        android:onClick="result"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@android:color/background_dark"
+        android:background="@android:color/holo_orange_light"
+        android:textSize="16sp" />
+    <TextView
+        android:id="@+id/displayMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text=""
+        android:layout_marginTop="10dp"
+        android:textSize="24sp"
+        android:textColor="@android:color/holo_orange_light"
+        />
+
+    <Button
+        android:layout_width="98dp"
+        android:layout_height="48dp"
+        android:text="RESET"
+        android:layout_marginTop="16dp"
+        android:onClick="notun"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@android:color/background_dark"
+        android:background="@android:color/holo_orange_light"
+        android:textSize="16sp" />
+</LinearLayout>
